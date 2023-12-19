@@ -1,0 +1,85 @@
+.site__wrapper {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.site__wrapper h1 {
+    text-align: center;
+    font-size: 40px;
+}
+
+.addTask__wrapper {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.addTask__wrapper input {
+    height: 20px;
+    width: 400px;
+}
+
+.toDoItem {
+    background: aliceblue;
+    width: 80%;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px;
+    border: 2px dashed black;
+}
+
+#inputAdd {
+    width: 400px;
+    height: 30px;
+    font-size: 18px;
+}
+
+#buttonAdd {
+    width: 200px;
+    height: 35px;
+    background-color: rgb(101, 211, 101);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#buttonAdd:hover {
+    box-shadow: 0 0 10px rgba(208, 255, 0, 0.1);
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#ulTask {
+    width: 30vw;
+    text-align: left;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 30px;
+}
+
+#updateItem,
+#deleteItem {
+    width: 100px;
+    height: 35px;
+    background-color: rgb(101, 211, 101);
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+#liItem{
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+}
