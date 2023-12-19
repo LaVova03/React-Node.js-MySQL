@@ -11,18 +11,18 @@ const ToDoItem = ({ todo, setValue, deleteData, updatedValue, setUpdateVelue, up
     const HendleChange = (id) => {
         setUpdate(true);
         setUpdateId(id)
-    }
+    };
 
     const addValue = (event) => {
         event.preventDefault();
         setValue(inputValue);
         setInputVelue('');
-    }
+    };
 
     const handleInputChange = (event) => {
         event.preventDefault();
         setInputVelue(event.target.value);
-    }
+    };
 
 
     return (
@@ -49,6 +49,6 @@ const ToDoItem = ({ todo, setValue, deleteData, updatedValue, setUpdateVelue, up
             </ul>
         </div>
     )
-}
+};
 
 export default ToDoItem;
