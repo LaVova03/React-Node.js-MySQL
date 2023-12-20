@@ -38,7 +38,8 @@ const ToDoItem = ({ todo, setValue, deleteData, updatedValue, setUpdateVelue, up
                             <div className="wrap">
                                 <button id="deleteItem" onClick={() => { deleteData(el.id) }}>delete</button>
                                 <button id="updateItem" onClick={() => { HendleChange(el.id) }}>update</button>
-                                {isUpdate ? <UpdateToDo updatedValue={updatedValue} setUpdate={setUpdate}
+                                {isUpdate ? <UpdateToDo 
+                                    updatedValue={updatedValue} setUpdate={setUpdate}
                                     setUpdateVelue={setUpdateVelue} updateData={updateData} updateId={updateId}
                                     setUpdateId={setUpdateId} /> : null}
                             </div>

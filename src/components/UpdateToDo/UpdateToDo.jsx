@@ -14,11 +14,17 @@ const UpdateToDo = ({ updatedValue, setUpdate, setUpdateVelue, updateData, updat
         setUpdateVelue(event.target.value);
     }
 
+    const HandleClose = (event) => {
+        event.preventDefault();
+        setUpdate(false);
+    }
+
     return (
         <div className='UpdateToDo'>
+            <button id='x-bt' onClick={HandleClose}>&#10006;</button><br />
             <label>UpdateToDo</label><br /><br />
             <input type="text" value={updatedValue} onChange={handleInputChange} />
-            <button onClick={HandleClick}>Update</button>
+            <button id='update__bt' onClick={HandleClick}>Update</button>
         </div>
     )
 }
